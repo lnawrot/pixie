@@ -1,0 +1,101 @@
+html, body {
+  background-color: #fff;
+  font: 400 10px/1.4 "Raleway", sans-serif;
+  color: #41414d;
+  overflow-x: hidden; }
+
+body {
+  font-size: 1.4rem; 
+  padding: 0 0 50px 0; }
+
+header {
+  margin-top: 30px;
+  text-align: center; }
+
+header h1 {
+  font-size: 50pt;
+  font-weight: 300;
+  color: #dd7603; }
+  header h1 span {
+    font-size: 40pt; }
+  @media (max-width: 767px) {
+    header h1 {
+      font-size: 45pt;
+      margin-bottom: 40px; } }
+
+header h1 {
+  font-weight: 500; }
+
+header h3,
+.signup h3 {
+  font-size: 20pt;
+  font-weight: 300;
+  line-height: 26pt;
+  color: #737380; }
+
+.desc-red {
+  color: #dd7603; }
+
+header h3 .desc-gray {
+  color: #45454d; }
+
+.header--logo {
+  height: 50px; }
+
+.own-input {
+  border-radius: 0;
+  padding: 25px 15px 23px 15px;
+  text-align: center;
+  font-size: 13pt;
+  -webkit-box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.08); }
+
+.submit-button {
+  background-color: #dd7603;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 15px;
+  padding: 17px 0 16px 0;
+  font-size: 17pt;
+  font-weight: 400; }
+  .submit-button:hover {
+    background-color: #c66900;
+    color: #eee; }
+
+.download {
+  margin-bottom: 40px;
+}
+
+footer {
+  clear: both;
+  font-size: 13pt;
+  font-weight: 300;
+  color: silver;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.screen img {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: 30px auto 60px auto; }
+
+.description {
+  font-size: 14pt;
+  text-align: center; }
+.description p {
+  margin-top: 20px; } 
+.description a, .download a.link {
+  text-decoration: none;
+  color: #dd7603; } 
+  .description a, .download a.link:hover {
+    color: #c66900; }
+
