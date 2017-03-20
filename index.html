@@ -16,7 +16,7 @@
         P<span>IXIE</span>
       </h1>
       <h3 class='col-xs-10 col-xs-offset-1'>
-      Awesome desktop application to help you create beautiful <span class='desc-red'>pixel perfect</span> websites.
+        Desktop application to help you create beautiful <span class='desc-red'>pixel perfect</span> websites.
       </h3>
     </header>
     <section class="row screen">
@@ -24,13 +24,13 @@
     </section>
     <section class="row download download-enabled">
       <div class="col-md-4">
-        <a href="#" class="btn btn-lg submit-button">Download for <strong>Mac</strong></a>
+        <a href="./dist/pixie-mac-1.0.1.zip" id="downloadMac" class="btn btn-lg submit-button">Download for <strong>Mac</strong></a>
       </div>
       <div class="col-md-4">
-        <a href="#" class="btn btn-lg submit-button">Download for <strong>Linux</strong></a>
+        <a href="./dist/pixie-linux-1.0.1.zip" id="downloadLinux" class="btn btn-lg submit-button">Download for <strong>Linux</strong></a>
       </div>
       <div class="col-md-4">
-        <a href="#" class="btn btn-lg submit-button">Download for <strong>Windows</strong></a>
+        <a href="./dist/pixie-windows-1.0.1.zip" id="downloadWin" class="btn btn-lg submit-button">Download for <strong>Windows</strong></a>
       </div>
     </section>
     <section class="row">
@@ -39,5 +39,24 @@
         <p>Application runs Chromium (based on <a href="https://nwjs.io">nwjs.io</a>) locally and allows you to make it <strong>transparent</strong> so that it may overlay design shown ie. in Photoshop.</p>
       </div>
     </section>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-94002460-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script>
+      function handler(e) {
+        ga('send', 'event', 'Download', e.currentTarget.id);
+      }
+
+      document.getElementById('downloadMac').addEventListener('click', handler, false);
+      document.getElementById('downloadWin').addEventListener('click', handler, false);
+      document.getElementById('downloadLinux').addEventListener('click', handler, false);
+    </script>
   </body>
 </html>
